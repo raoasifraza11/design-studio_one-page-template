@@ -1,169 +1,68 @@
-# Design studio one page template - ARCHIVED
+# [Start Bootstrap - Agency](https://startbootstrap.com/template-overviews/agency/)
 
-Flat and responsive website template, designed by [cssauthor](http://www.cssauthor.com/) and coded by [Maxim Orlov](https://github.com/orlovmax). 
+[Agency](https://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
 
-Demo: [http://website-templates.github.io/design-studio_one-page-template](http://website-templates.github.io/design-studio_one-page-template/)
+## Preview
 
-![Mockup demo](screenshots/pic.jpg)
-Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk/)
+[![Agency Preview](https://startbootstrap.com/assets/img/templates/agency.jpg)](https://blackrockdigital.github.io/startbootstrap-agency/)
 
-## Contents
-* [Folder structure](#folder-and-file-structure)
-* [Requirements](#requirements)
-	- [Editorconfig](#editorconfig)
-* [Site configuration](#site-configuration)
-* [Tasks](#tasks)
-	- [Start](#start)
-	- [Dev](#dev)
-	- [Build](#build)
-	- [Rebuild](#rebuild)
-	- [Server](#server)
-* [Live reload](#live-reload)
-* [License](#license)
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-agency/)**
 
-## Folder and file structure
-```
-./
-├── .editorconfig
-├── bower.json
-├── README.md
-├── automation.sh
-|
-├── gulp_tasks/                                * gulp tasks
-|   ├── config/                                * gulp tasks config
-│   |   ├── paths.js
-│   |   ├── settings.js
-│   |   └── aliases.js
-│   |
-|   └── task.js
-│
-├── gulpfile.js
-├── package.json
-|
-├── screenshots/                               * responsive test screenshots
-|
-├── dev/                                       * site source
-│   ├── images/                                * image sources
-|   │
-│   ├── pug/                                   * templates
-|   |   ├── blocks/                            * blocks library
-|   │   |   └── block.pug
-|   │   ├── helpers/                           * helper mixins
-|   │   ├── vendor/                            * third-party code
-|   │   ├── layouts/                           * page layouts
-|   │   └── pages/                             * main pages templates
-|   │
-│   ├── js/                                    * compiled and source js
-|   |   ├── vendor/                            * vendor scripts library
-|   |   ├── lib/                               * site scripts library
-|   │   ├── head.js                            * head scripts
-|   │   └── body.js                            * vendor scripts
-|   │
-|   ├── sass/                                  * sass preprocessor styles
-|   |   ├── blocks/                            * blocks library
-|   │   |   └── block.sass
-|   │   ├── helpers/                           * mixins and vars
-|   │   ├── vendor/                            * third-party code
-|   │   ├── custom.sass
-|   │   ├── noscript.sass
-|   │   └── screen.sass
-|   │
-│   ├── helpers/                               * helper files
-|   |   ├── favicon.ico
-|   |   └── .htaccess
-|   │
-│   ├── fonts/                                 * font sources
-|   │
-│   └── data/                                  * configs and data for templates
-│
-└── build/                                     * built source
-    ├── index.html
-    ├── page.html
-    |
-    └── static/                                * static assets
-        ├── css/                               * minified styles
-        |
-        ├── images/                            * minified images
-        │
-        ├── js/                                * minified assembled js
-        |
-        └── fonts/                             * @font-face-ready webfonts
+## Status
 
-```
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-agency/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-agency.svg)](https://www.npmjs.com/package/startbootstrap-agency)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-agency.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-agency)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-agency/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-agency)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-agency/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-agency?type=dev)
 
-## Requirements:
-- [Node.js](http://nodejs.org/)
-- Build sytem: [Gulp](http://gulpjs.com/)
-- Optionally: [Editorconfig](http://editorconfig.org/)
+## Download and Installation
 
-#### Editorconfig
-This project have .editorconfig file at the root that used by your code editor with editorconfig plugin. It describes codestyle like indent style, trailing whitespaces etc. See more details [here](http://editorconfig.org/)
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/agency/)
+* Install via npm: `npm i startbootstrap-agency`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-agency.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-agency)
 
-## Site configuration
-This boilerplate use Pug templates with external data configs. 
-Main settings can be found in `dev/data/config.json` file. And they're available for usage in templates with `config.key-name`
+## Usage
 
-## Tasks
-Here comes groups of gulp tasks with some explanations
+### Basic Usage
 
-#### Start 
-Install bower dependencies and place them to dev folders.
-Gulp: `gulp start`
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-* Install bower components
-* Copy bower components to dev folder
-* Remove gitkeep files
+### Advanced Usage
 
-#### Dev
-Dev task with static server.
-Gulp: `gulp dev`
+After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-* Concatenate javascripts
-* Compile Sass stylesheets
-* Add vendor prefixes in css
-* Combine media queries in css files
-* Compile Pug templates
-* Sync helpers and other assets
-* Sync images
-* Run BrowserSync static server with live reload using 
-* Watch for changes and run dev task
+#### Gulp Tasks
 
+- `gulp` the default task that builds everything
+- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+- `gulp js` minifies the themes JS file
+- `gulp vendor` copies dependencies from node_modules to the vendor directory
 
-#### Build 
-Build task.
-Gulp: `gulp build`
+You must have npm and Gulp installed globally on your machine in order to use these features.
 
-* Minify images
-* Minify javascript files
-* Minify stylesheets
-* Minify html
-* Run BrowserSync static server 
+## Bugs and Issues
 
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-agency/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/agency/).
 
-#### Rebuild 
-Regenerate and build project by running all tasks.
-Gulp: `gulp rebuild`
+## About
 
-* Concatenate javascripts
-* Compile Sass stylesheets
-* Add vendor prefixes in css
-* Combine media queries in css files
-* Compile Pug templates
-* Sync helpers and other assets
-* Sync images
-* Minify images
-* Minify javascript files
-* Minify stylesheets
-* Minify html
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-#### Server 
-Run server without watching for changes.
-Gulp: `gulp server`
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
 
-* Run BrowserSync static server
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-## Live reload 
-This project uses BrowserSync as static server with enabled and configured live reload option.
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-## License
-[MIT](https://github.com/website-templates/design-studio_one-page-template/blob/master/LICENSE.md)
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-agency/blob/gh-pages/LICENSE) license.
